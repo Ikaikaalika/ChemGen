@@ -1,9 +1,4 @@
 # ChemGen
-
-Below is a well-structured `README.md` for the **Reaction Pathway Generator with MLX Transformer, or ChemGen** project. It provides an overview, setup instructions, usage details, and additional context to make the project accessible to others (e.g., for a portfolio or collaboration). Since this is an MLX-based project, I’ll emphasize the Apple Silicon requirement and include clear steps for running it.
-
----
-
 # Reaction Pathway Generator with MLX Transformer
 
 ## Overview
