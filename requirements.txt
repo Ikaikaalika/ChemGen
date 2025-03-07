@@ -1,0 +1,6 @@
+pandas==2.2.1
+numpy==1.26.4
+tiktoken==0.6.0
+torch==2.2.1  # Includes MPS support for Apple Silicon
+rdkit==2023.9.5
+flask==3.0.3
