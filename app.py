@@ -125,13 +125,15 @@ class ReactionTransformer(nn.Module):
     def __init__(self, vocab_size, d_model=64, nhead=4, num_layers=2, dim_feedforward=256, dropout=0.1):
         super().__init__()
         self.embedding = nn.Embedding(vocab_size, d_model)
+        # Use encoder layers since the model does not utilize cross-attention
         self.layers = [
-            nn.TransformerDecoderLayer(
-                d_model=d_model,
+            nn.TransformerEncoderLayer(
+                dims=d_model,
                 num_heads=nhead,
-                dim_feedforward=dim_feedforward,
+                mlp_dims=dim_feedforward,
                 dropout=dropout
-            ) for _ in range(num_layers)
+            )
+            for _ in range(num_layers)
         ]
         self.fc = nn.Linear(d_model, vocab_size)
         self.d_model = d_model
