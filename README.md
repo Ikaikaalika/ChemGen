@@ -57,8 +57,8 @@ reaction_pathway_generator_mlx_transformer/
 ## Setup
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/reaction_pathway_generator_mlx_transformer.git
-   cd reaction_pathway_generator_mlx_transformer
+   git clone https://github.com/ikaikaalika/ChemGen.git
+   cd ChemGen
    ```
 
 2. **Prepare the Dataset**:
